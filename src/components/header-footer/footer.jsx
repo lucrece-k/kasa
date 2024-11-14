@@ -19,7 +19,10 @@ function Footer() {
           alt="lettre a"
         />
       </div>
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p>
+        © 2020 Kasa. All
+        <br className="break" /> rights reserved
+      </p>
     </div>
   );
 }

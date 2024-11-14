@@ -389,7 +389,9 @@ body {
   .ks-footer {
     padding: 66px 90px 58px 92px;
     p {
-      width: 54%;
+      .break {
+        display: block;
+      }
     }
   }
   // fiche logement
