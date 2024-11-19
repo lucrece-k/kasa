@@ -1,0 +1,11 @@
+@import "../../components/global/global.scss";
+.ks-main {
+  margin-inline: 5rem;
+  margin-bottom: 2rem;
+}
+// *************************************media query tablette*****************************************
+@media (max-width: 1023px) {
+  .ks-main {
+    margin-inline: 22px;
+  }
+}

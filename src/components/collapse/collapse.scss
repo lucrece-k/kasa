@@ -1,0 +1,36 @@
+@import "../global/global.scss";
+.arrow-back {
+  transform: rotate(0deg);
+  transition: transform 600ms ease-in-out;
+  &.rotated {
+    transform: rotate(180deg);
+  }
+}
+
+// *************************************media query tablette*****************************************
+@media (max-width: 1023px) {
+  .ks-main {
+    .logement-info {
+      .info-a-propos {
+        gap: 81px;
+      }
+    }
+  }
+}
+// *************************************media query mobile*******************************************
+@media (max-width: 767px) {
+  .ks-main {
+    .logement-info {
+      flex-direction: column;
+      gap: 20px;
+      margin-block: 27px;
+      width: 91%;
+      .info-a-propos {
+        justify-content: space-between;
+        width: none;
+        gap: 0;
+        width: 100%;
+      }
+    }
+  }
+}

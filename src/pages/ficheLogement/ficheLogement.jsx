@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import arrowLeft from "../images/arrowLeft.png";
-import arrowRight from "../images/arrowRight.png";
-import Collapse from "../components/collapse";
-import Erreur from "./erreur";
+import arrowLeft from "../../images/arrowLeft.png";
+import arrowRight from "../../images/arrowRight.png";
+import Collapse from "../../components/collapse/collapse";
+import Erreur from "../erreur/erreur";
+import "../ficheLogement/ficheLogement.scss";
 
 function FicheLogement({ listeLogement, showArrow = true, showNumber = true }) {
   const { id } = useParams();

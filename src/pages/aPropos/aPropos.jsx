@@ -1,8 +1,8 @@
-import Banner from "../components/banner";
-import aproposBackground from "../../src/images/img-banner-a-propos.png";
-import "../components/index.scss";
-import Collapse from "../components/collapse";
-import listeApropos from "../listeApropos.json";
+import Banner from "../../components/banner/banner";
+import aproposBackground from "../../images/img-banner-a-propos.png";
+import "../aPropos/aPropos.scss";
+import Collapse from "../../components/collapse/collapse";
+import listeApropos from "../../listeApropos.json";
 
 function Apropos() {
   return (

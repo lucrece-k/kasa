@@ -1,0 +1,55 @@
+@import "../../components/global/global.scss";
+.erreur-main {
+  .message-erreur {
+    color: $color;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 139px;
+  margin-block: 139px;
+  margin-inline: 5rem;
+  p {
+    margin: 0;
+  }
+  p:nth-child(1) {
+    font-size: 288px;
+    font-weight: 700;
+  }
+  P:nth-child(2) {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  br {
+    display: none;
+  }
+}
+// *************************************media query mobile*******************************************
+@media (max-width: 767px) {
+  .erreur-main {
+    margin-inline: 22px;
+    margin-block: 113px;
+    .message-erreur {
+      gap: 113px;
+    }
+    p:nth-child(1) {
+      font-size: 96px;
+    }
+    P:nth-child(2) {
+      font-size: 18px;
+      text-align: center;
+    }
+    a {
+      font-size: 14px;
+    }
+    br {
+      display: block;
+    }
+  }
+}

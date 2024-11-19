@@ -1,3 +1,4 @@
+import "../footer/footer.scss";
 function Footer() {
   return (
     <div className="ks-footer">

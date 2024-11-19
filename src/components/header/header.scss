@@ -1,0 +1,51 @@
+@import "../global/global.scss";
+.ks-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 45px 50px;
+  margin-inline: 5rem;
+
+  .ks-logo {
+    margin-right: auto;
+    img {
+      width: 210.322px;
+    }
+  }
+  .ks-lien-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3.56rem;
+    .underline {
+      text-decoration: underline;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// *************************************media query tablette*****************************************
+@media (max-width: 1023px) {
+  .ks-navbar {
+    margin-inline: 22px;
+  }
+}
+// *************************************media query mobile*******************************************
+@media (max-width: 767px) {
+  .ks-navbar {
+    margin-bottom: 27px;
+    .ks-logo {
+      img {
+        width: 145px;
+      }
+    }
+    .ks-lien-nav {
+      font-size: 12px;
+      gap: 1.6rem;
+    }
+  }
+}

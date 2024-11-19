@@ -1,5 +1,5 @@
-import "../components/index.scss";
-import arrowBack from "../images/arrow_back.png";
+import "../collapse/collapse.scss";
+import arrowBack from "../../images/arrow_back.png";
 import { useState } from "react";
 
 function Collapse({ title, content, description, equipments }) {
@@ -21,9 +21,15 @@ function Collapse({ title, content, description, equipments }) {
       </div>
       {isOpen ? (
         <div className="collapse-content">
-          {content && <p>{content}</p>}
+          {content && (
+            <p style={{ paddingBlock: 0, paddingInline: 30, fontSize: 18 }}>
+              {content}
+            </p>
+          )}
           {description && (
-            <p style={{ paddingBlock: 0, paddingInline: 30 }}>{description}</p>
+            <p style={{ paddingBlock: 0, paddingInline: 30, fontSize: 18 }}>
+              {description}
+            </p>
           )}
           {equipments && (
             <ul style={{ listStyleType: "none" }}>

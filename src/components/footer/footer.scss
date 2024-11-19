@@ -1,0 +1,40 @@
+@import "../global/global.scss";
+.ks-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-block: 66px 29px;
+  gap: 28px;
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    .lettre {
+      width: 26.708px;
+      height: 30.954px;
+      margin-top: 6px;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    .break {
+      display: none;
+    }
+  }
+}
+// *************************************media query mobile*******************************************
+@media (max-width: 767px) {
+  .ks-footer {
+    padding: 66px 90px 58px 92px;
+    p {
+      .break {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/header-footer/header";
-import Footer from "./components/header-footer/footer";
-import Apropos from "./pages/aPropos";
-import FicheLogement from "./pages/ficheLogement";
-import Erreur from "./pages/erreur";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import Apropos from "./pages/aPropos/aPropos";
+import FicheLogement from "./pages/ficheLogement/ficheLogement";
+import Erreur from "./pages/erreur/erreur";
 import listeLogementData from "./listeLogement.json";
 import Home from "./pages/Home/home";
 

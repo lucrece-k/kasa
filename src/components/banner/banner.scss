@@ -1,0 +1,60 @@
+@import "../global/global.scss";
+.banner-title {
+  height: 268px;
+  .ks-banner {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 1.6rem;
+    position: relative;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    margin: 0;
+    position: relative;
+    bottom: 135px;
+    left: 184px;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 66%;
+    br {
+      display: none;
+    }
+  }
+}
+// *************************************media query tablette*****************************************
+@media (max-width: 1023px) {
+  .banner-title {
+    .title {
+      bottom: 164px;
+      left: 48px;
+      font-size: 40px;
+    }
+  }
+}
+// *************************************media query mobile*******************************************
+@media (max-width: 767px) {
+  .ks-main {
+    .banner-title {
+      height: 134px;
+      .ks-banner {
+        margin-bottom: 22px;
+        height: 111px;
+      }
+      .title {
+        font-size: 24px;
+        bottom: 107px;
+        left: 16px;
+        width: 100%;
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "../location/location.scss";
 
 function Location({ listeLogement }) {
   const navigate = useNavigate();
