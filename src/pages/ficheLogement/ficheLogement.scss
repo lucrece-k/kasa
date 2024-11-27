@@ -98,8 +98,10 @@
           border-radius: 64px;
         }
         .star {
-          color: lightgray;
           font-size: 36px;
+        }
+        .empty {
+          color: lightgray;
         }
         .filled {
           color: $color;
