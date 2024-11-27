@@ -1,6 +1,6 @@
 import Banner from "../../components/banner/banner";
 import aproposBackground from "../../images/img-banner-a-propos.png";
-import "../aPropos/aPropos.scss";
+import "./aPropos.scss";
 import Collapse from "../../components/collapse/collapse";
 import listeApropos from "../../listeApropos.json";
 

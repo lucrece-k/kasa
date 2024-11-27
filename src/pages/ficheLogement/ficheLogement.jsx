@@ -5,8 +5,9 @@ import arrowRight from "../../images/arrowRight.png";
 import Collapse from "../../components/collapse/collapse";
 import Erreur from "../erreur/erreur";
 import "../ficheLogement/ficheLogement.scss";
+import Stars from "../../images/_Rate.png";
 
-function FicheLogement({ listeLogement, showArrow = true, showNumber = true }) {
+function FicheLogement({ listeLogement, showArrow, showNumber }) {
   const { id } = useParams();
   const logement = listeLogement.find((logement) => logement.id === id);
 
@@ -34,10 +35,13 @@ function FicheLogement({ listeLogement, showArrow = true, showNumber = true }) {
   };
 
   const ratingStars = (rating) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={i < rating ? "star filled" : "star empty"}>
-        ★
-      </span>
+    return Array.from({ length: 1 }, (_, i) => (
+      <img
+        key={i}
+        className={i < rating ? "star filled" : "star empty"}
+        src={Stars}
+        alt="rating stars"
+      />
     ));
   };
 
